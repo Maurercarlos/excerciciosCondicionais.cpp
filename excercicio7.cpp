@@ -6,6 +6,23 @@
 
 int main(){
 
-    int num1;
+    int num;
+    int celsius;
+    int fahrenheit;
 
+    printf("Digite a sua temperatura em Celsius: ");
+    scanf("%d", &num);
+
+    celsius = (num - 32) / 1.8;
+
+    printf("Sua converção fica %d\n", celsius);
+
+    printf("Digite a sua temperatura em fahrenheit: ");
+    scanf("%d", &num);
+
+    fahrenheit = (num * 1.8) + 32;
+    
+    printf("Sua converção fica %d\n", fahrenheit);
+
+    return 0;
 }

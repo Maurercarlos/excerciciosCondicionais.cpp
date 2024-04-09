@@ -21,9 +21,9 @@ int main(){
 
     if (num1 == num2 && num2 == num3) {
         printf("Equilátero %d e %d e %d\n", num1, num2, num3);
-    } else if ((num1 == num2 && num2 != num3) {
+    } else if (num1 == num2 && num2 != num3) {
         printf("Isósceles %d e %d e %d\n", num1, num2, num3);
-    } else (num1 != num2 != num3!= 0) {
+    } else if (num1 != num2 != num3) {
         printf("Escaleno %d e %d e %d\n", num1, num2, num3);
     }
     return 0;

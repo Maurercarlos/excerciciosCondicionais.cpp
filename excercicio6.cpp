@@ -8,5 +8,17 @@
 int main(){
 
     int num;
+    
+    printf("Digite o seu ano: ");
+    scanf("%d", &num);
 
+    if (num % 4 == 0) {
+        printf("Ano bissexto %d\n", num);
+    } else if (num % 400 == 0) {
+        printf("É ano bissexto %d\n", num);
+    } else if (num != 100 == 0) {
+        printf("Não é ano bissexto %d\n", num);
+    }
+
+return 0;
 }
