@@ -17,6 +17,9 @@
 
 int main(){
 
-    int num1;
+    int altura;
+    int peso;
+
+    printf("Digite a sua altura em metros")
 
 }
