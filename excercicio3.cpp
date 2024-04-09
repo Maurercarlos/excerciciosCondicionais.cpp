@@ -11,9 +11,9 @@ int main(){
     printf("Digite um número inteiro: ");
     scanf("%d", &num);
 
-    if (num % 3 && 5 == 0) {
+    if (num % 3 == 0 && num % 5 == 0) {
         printf("É múltiplo de 3 e de 5 %d\n", num);
-    } else if (num != 3 && 5 == 0) {
+    } else if (num != 3 == 0 && num != 5 == 0) {
         printf("Não é múltiplo de 3 e de 5 %d\n", num);
     }
     return 0;                           
