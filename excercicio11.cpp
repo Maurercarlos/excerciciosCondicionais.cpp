@@ -7,6 +7,17 @@
 
 int main(){
 
-    int num1;
+    int leads;
 
+    printf("Digite a quantidade de leads: ");
+    scanf("%d", &leads);
+
+    if (leads <= 5) { 
+        printf("Quantidade baixa %d\n", leads);
+    } else if ((leads = 6) && leads < 10) {
+        printf("Quantidade desejada %d\n", leads);
+    } else if ((leads = 11) && leads > 11) {
+        printf("Quantidade alta %d\n", leads);
+    } 
+    return 0;
 }

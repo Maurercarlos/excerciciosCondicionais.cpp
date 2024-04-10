@@ -7,6 +7,23 @@
 
 int main(){
 
-    int num1;
+    float x;
+    float y;
 
+    printf("Digite a sua coordenada: ");
+    scanf("%f", &x);
+
+    printf("Digite a sua segunda coordenada: ");
+    scanf("%f", &y);
+
+    if (x < y) {
+        printf("Sua coordenada é igual a 0 %f, %f\n", x, y);
+    } else if (x > y) {
+        printf("Coordenada %f, %f\n", x, y);
+    } else if (x == y) {
+        printf("Coordenada %f, %f\n", x, y);
+    } else if (x != 3) {
+        printf("Coordenada %f, %f", x, y);
+    }
+    return 0;
 }

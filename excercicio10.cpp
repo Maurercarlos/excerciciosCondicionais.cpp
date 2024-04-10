@@ -8,6 +8,15 @@
 
 int main(){
 
-    int num1;
+    int saldo;
 
+    printf("Digite a quantidade que deseja: ");
+    scanf("%d", &saldo);
+
+    if (saldo > 0) {
+        printf("Você tem saldo para sacar, no valor de: %d\n", saldo);
+    } else if (saldo < 0) {
+        printf("Saldo indisponível: %d\n", saldo);
+    }
+    return 0;
 }

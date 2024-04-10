@@ -9,17 +9,31 @@
 //Se o IMC estiver entre 18.5 e menor que 25, imprima "Categoria: Peso normal".
 //Se o IMC estiver entre 25 e menor que 30, imprima "Categoria: Sobrepeso".
 //Se o IMC for 30 ou maior, imprima "Categoria: Obeso".
-//Exemplo de Saída:
-//Insira sua altura em metros: 1.75
-//Insira seu peso em quilogramas: 70
-//Seu IMC é: 22.86
-//Categoria: Peso normal
 
 int main(){
 
-    int altura;
-    int peso;
+    float altura;
+    float peso;
+    float imc;
 
-    printf("Digite a sua altura em metros")
+    printf("Insira sua altura em metros: ");
+    scanf("%f", &altura);
 
+    printf("Digite o seu peso em quilogramas: ");
+    scanf("%f", &peso);
+
+    altura = altura / 100; // <-- Aqui é para converter altura em centímetros ex: 182;
+
+    imc = peso / (altura * altura); //<-- Aqui é a altura normal ex: 1.82
+
+    if (imc < 18.5) {
+        printf("Categoria abaixo do peso %.2f, %.2f, %.2f\n", altura, peso, imc);
+    } else if ((imc >= 18.5) && imc < 25) {
+        printf("Peso normal para %.2f, %.2f, %.2f\n", altura, peso, imc);
+    } else if ((imc > 25) && imc < 30) {
+        printf("Sobrepeso %.2f, %.2f, %.2f\n", altura, peso, imc);
+    } else if (imc >= 30) {
+        printf("Obeso %.2f, %.2f, %.2f\n", altura, peso, imc);
+    }
+    return 0;
 }

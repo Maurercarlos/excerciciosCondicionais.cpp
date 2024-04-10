@@ -7,6 +7,37 @@
 
 int main(){
 
-    int num1;
+    float frequencia;
+    int nota;
+    int media;
 
+
+    printf("Digite sua primeira nota: ");
+    scanf("%d", &nota);
+
+    printf("Digite sua segunda nota: ");
+    scanf("%d", &nota);
+
+    printf("Digite sua terceira nota: ");
+    scanf("%d", &nota);
+
+    printf("Digite a sua frequência: ");
+    scanf("%f", &frequencia);
+
+    media = (nota + nota + nota) / 3;
+
+    if (nota > 7) {
+        printf("Aprovado %d\n", nota);
+    } else if ((nota < 7) && nota > 5) {
+        printf("Recuperação %d\n", nota);
+    } else if (nota < 5) {
+        printf("Reprovado %d\n", nota);
+    } else if ((frequencia = 100) && media >= 7) {
+        printf("Aprovado. Parabéns. %.3f, %d", frequencia, media);
+    } else if ((frequencia = 75) && media >= 7) {
+        printf("Aprovado. %.3f, %d", frequencia, media);
+    } else if ((frequencia < 75) && media >= 7) {
+        printf("Reprovado, por falta de frequencia. %.3f, %d", frequencia, media);
+    }
+    return 0;
 }
