@@ -8,6 +8,28 @@
 
 int main(){
 
-    int num1;
+    float frequencia;
+    int nota;
+    int recuperacao;
+    
 
+    printf("Digite sua nota, da recuperação: ");
+    scanf("%d", &recuperacao);
+
+    printf("Digite a sua frequência: ");
+    scanf("%f", &frequencia);
+
+    printf("Digite sua nota: ");
+    scanf("%d", &nota);
+
+    if (frequencia > 75) {
+        printf("Aprovado. %.2f\n", frequencia);
+    } else if ((recuperacao + nota == 10) && frequencia >= 75) {
+        printf("Aprovado. %d, %d, %.2f\n", recuperacao, nota, frequencia);
+    } else if ((recuperacao + nota != 10) && frequencia < 75) {
+        printf("Reprovado. %d, %d, %.2f\n", recuperacao, nota, frequencia);
+    } else if ((recuperacao + nota == 10) && frequencia < 75) {
+        printf("Reprovado. %d, %d, %.2f\n", recuperacao, nota, frequencia);
+    }
+    return 0;
 }

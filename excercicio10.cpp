@@ -13,9 +13,9 @@ int main(){
     printf("Digite a quantidade que deseja: ");
     scanf("%d", &saldo);
 
-    if (saldo > 0) {
+    if (saldo >= 1) {
         printf("Você tem saldo para sacar, no valor de: %d\n", saldo);
-    } else if (saldo < 0) {
+    } else if (saldo < 1) {
         printf("Saldo indisponível: %d\n", saldo);
     }
     return 0;

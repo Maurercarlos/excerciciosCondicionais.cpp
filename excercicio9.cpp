@@ -16,14 +16,20 @@ int main(){
     printf("Digite a sua segunda coordenada: ");
     scanf("%f", &y);
 
-    if (x < y) {
-        printf("Sua coordenada é igual a 0 %f, %f\n", x, y);
-    } else if (x > y) {
-        printf("Coordenada %f, %f\n", x, y);
-    } else if (x == y) {
-        printf("Coordenada %f, %f\n", x, y);
-    } else if (x != 3) {
-        printf("Coordenada %f, %f", x, y);
+    if ((x < 0) && y > 0) {
+        printf("Sua coordenada esta no primeiro quadrante. %f, %f\n", x, y);
+    } else if ((x < 0) && y > 0) {
+        printf("Sua coordenada está no segundo quadrante. %f, %f\n", x, y);
+    } else if ((x < 0) && y < 0) {
+        printf("Sua coordenada está no terceiro quadrante. %f, %f\n", x, y);
+    } else if ((x < 0) && y > 0) {
+        printf("Sua Coordenada, está no quarto quadrante. %f, %f", x, y);
+    } else if ((x == 0) && y != 0) {
+        printf("Sua Coordenada, está sobre o eixo das ordenadas. %f, %f", x, y);
+    } else if ((x != 0) && y == 0) {
+        printf("Sua Coordenada, está sobre o eixo das abcissas. %f, %f", x, y);
     }
     return 0;
+
+    //Usei o Chat, pois não consegui fazer essa atividade. Entendi mais ou menos o que foi proposto aqui, mas sem sucesso na hora de fazer eu mesmo.
 }
